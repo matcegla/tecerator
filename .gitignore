@@ -1,0 +1,5 @@
+/build/
+/dist/
+/.idea/
+/tecerator.egg-info/
+/venv
