@@ -3,3 +3,5 @@
 /.idea/
 /tecerator.egg-info/
 /venv
+__pycache__
+/example/build/
