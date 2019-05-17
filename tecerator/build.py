@@ -14,13 +14,13 @@ class Context:
         if self.path_for_target().exists():
             _sh.rmtree(self.path_for_target())
 
-    def write(self, text, pseudo_path: _ty.List[str]):
+    def write(self, text, pseudo_path):
         path = self.path_for_target().joinpath(*pseudo_path)
         path.parent.mkdir(parents=True, exist_ok=True)
         with open(path, 'w') as f:
             f.write(text)
 
-    def copy(self, source, pseudo_path: _ty.List[str]):
+    def copy(self, source, pseudo_path):
         path = self.path_for_target().joinpath(*pseudo_path)
         path.parent.mkdir(parents=True, exist_ok=True)
         _sh.copy2(source, path)

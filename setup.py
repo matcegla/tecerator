@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='tecerator',
-    version='0.0.2',
+    version='0.1.0',
     author='Mateusz Cegiełka',
     author_email='mateusz@cegla.net',
     description='A competitive programming task preparation helper',
